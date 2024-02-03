@@ -1,0 +1,1320 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+	<head>
+		<title>Chauffeur Booking System | Documentation</title>
+		<meta charset="utf-8">
+		<meta content="width=device-width, initial-scale=1.0" name="viewport">
+		<link rel="stylesheet" href="style/flexnav.css"/>
+		<link rel="stylesheet" href="style/fancybox/jquery.fancybox.css"/>
+		<link rel="stylesheet" href="style/base.css"/>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700"/>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,500"/>	
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic"/>
+	</head>
+
+	<body>
+
+		<div class="doc-header doc-clear-fix">
+
+			<div>
+
+				<div class="doc-clear-fix">
+
+					<div class="doc-header-logo">
+						<a href="http://quanticalabs.com" target="_blank">
+							<img src="image/logo.png" alt=""/>
+						</a>
+					</div>
+
+					<div class="doc-top-menu-default"><ul class="with-js"><li><a href="http://quanticalabs.com" target="_blank">Home </a></li><li><a href="https://1.envato.market/quanticalabs-portfolio" target="_blank">Portfolio </a></li><li><a href="http://support.quanticalabs.com/forum" target="_blank">Support Forum</a></li></ul></div>
+
+				</div>
+
+				<div class="menu-button">Menu</div>
+				<nav class="doc-menu-responsive">
+					<ul class="flexnav" data-breakpoint="800"><li><a href="#doc-about" target="_self">About</a></li><li><a href="#doc-installing-plugin" target="_self">Installing the plugin</a><ul class="with-js"><li><a href="#doc-installing-plugin-via-dashboard" target="_self">Installing the plugin via dashboard</a></li><li><a href="#doc-installing-plugin-via-ftp" target="_self">Installing the plugin via FTP</a></li></ul></li><li><a href="#doc-updating-plugin" target="_self">Updating the plugin</a></li><li><a href="#doc-importing-dummy-content" target="_self">Importing dummy content</a></li><li><a href="#doc-modules" target="_self">Modules</a><ul class="with-js"><li><a href="#doc-bookings" target="_self">Bookings</a><ul class="with-js"><li><a href="#doc-bookings-view" target="_self">View Booking</a></li></ul></li><li><a href="#doc-booking-forms" target="_self">Booking Forms</a><ul class="with-js"><li><a href="#doc-booking-forms-edit" target="_self">Edit Booking Form</a></li></ul></li><li><a href="#doc-booking-extras" target="_self">Booking Extras</a><ul class="with-js"><li><a href="#doc-booking-extras-edit" target="_self">Edit Booking Extra</a></li></ul></li><li><a href="#doc-routes" target="_self">Routes</a><ul class="with-js"><li><a href="#doc-routes-edit" target="_self">Edit Route</a></li></ul></li><li><a href="#doc-vehicles" target="_self">Vehicles</a><ul class="with-js"><li><a href="#doc-vehicles-edit" target="_self">Edit Vehicle</a></li></ul></li><li><a href="#doc-vehicle-types" target="_self">Vehicle Types</a></li><li><a href="#doc-vehicle-attributes" target="_self">Vehicle Attributes</a><ul class="with-js"><li><a href="#doc-vehicle-attributes-edit" target="_self">Edit Vehicle Attribute</a></li></ul></li><li><a href="#doc-tax-rates" target="_self">Tax Rates</a><ul class="with-js"><li><a href="#doc-tax-rates-edit" target="_self">Edit Tax Rate</a></li></ul></li><li><a href="#doc-email-accounts" target="_self">Email Accounts</a><ul class="with-js"><li><a href="#doc-email-accounts-edit" target="_self">Edit Email Account</a></li></ul></li></ul></li><li><a href="#doc-plugin-options" target="_self">Plugin Options</a></li><li><a href="#doc-internationalization" target="_self">Internationalization</a></li><li><a href="#doc-files-structure" target="_self">Files structure</a></li><li><a href="#doc-credits" target="_self">Credits</a><ul class="with-js"><li><a href="#doc-credits-fonts" target="_self">Fonts</a></li><li><a href="#doc-credits-images" target="_self">Images</a></li></ul></li><li><a href="#doc-version-history" target="_self">Version history</a></li><li><a href="#doc-support" target="_self">Support</a></li><li><a href="http://quanticalabs.com" target="_blank">Home </a></li><li><a href="https://1.envato.market/quanticalabs-portfolio" target="_blank">Portfolio </a></li><li><a href="http://support.quanticalabs.com/forum" target="_blank">Support Forum</a></li></ul>
+				</nav>
+
+			</div>
+
+		</div>
+
+		<div class="doc-content  doc-clear-fix">
+
+			<div class="doc-main">
+
+				<div class="doc-content-left">
+
+					<div class="doc-main-menu-default">
+						<ul class="with-js"><li><a href="#doc-about" target="_self">About</a></li><li><a href="#doc-installing-plugin" target="_self">Installing the plugin</a><ul class="with-js"><li><a href="#doc-installing-plugin-via-dashboard" target="_self">Installing the plugin via dashboard</a></li><li><a href="#doc-installing-plugin-via-ftp" target="_self">Installing the plugin via FTP</a></li></ul></li><li><a href="#doc-updating-plugin" target="_self">Updating the plugin</a></li><li><a href="#doc-importing-dummy-content" target="_self">Importing dummy content</a></li><li><a href="#doc-modules" target="_self">Modules</a><ul class="with-js"><li><a href="#doc-bookings" target="_self">Bookings</a><ul class="with-js"><li><a href="#doc-bookings-view" target="_self">View Booking</a></li></ul></li><li><a href="#doc-booking-forms" target="_self">Booking Forms</a><ul class="with-js"><li><a href="#doc-booking-forms-edit" target="_self">Edit Booking Form</a></li></ul></li><li><a href="#doc-booking-extras" target="_self">Booking Extras</a><ul class="with-js"><li><a href="#doc-booking-extras-edit" target="_self">Edit Booking Extra</a></li></ul></li><li><a href="#doc-routes" target="_self">Routes</a><ul class="with-js"><li><a href="#doc-routes-edit" target="_self">Edit Route</a></li></ul></li><li><a href="#doc-vehicles" target="_self">Vehicles</a><ul class="with-js"><li><a href="#doc-vehicles-edit" target="_self">Edit Vehicle</a></li></ul></li><li><a href="#doc-vehicle-types" target="_self">Vehicle Types</a></li><li><a href="#doc-vehicle-attributes" target="_self">Vehicle Attributes</a><ul class="with-js"><li><a href="#doc-vehicle-attributes-edit" target="_self">Edit Vehicle Attribute</a></li></ul></li><li><a href="#doc-tax-rates" target="_self">Tax Rates</a><ul class="with-js"><li><a href="#doc-tax-rates-edit" target="_self">Edit Tax Rate</a></li></ul></li><li><a href="#doc-email-accounts" target="_self">Email Accounts</a><ul class="with-js"><li><a href="#doc-email-accounts-edit" target="_self">Edit Email Account</a></li></ul></li></ul></li><li><a href="#doc-plugin-options" target="_self">Plugin Options</a></li><li><a href="#doc-internationalization" target="_self">Internationalization</a></li><li><a href="#doc-files-structure" target="_self">Files structure</a></li><li><a href="#doc-credits" target="_self">Credits</a><ul class="with-js"><li><a href="#doc-credits-fonts" target="_self">Fonts</a></li><li><a href="#doc-credits-images" target="_self">Images</a></li></ul></li><li><a href="#doc-version-history" target="_self">Version history</a></li><li><a href="#doc-support" target="_self">Support</a></li></ul>
+					</div>
+
+				</div>
+
+				<div class="doc-content-right">
+					
+					<style>
+						.doc-number     { background-color:#FF7E00; }
+						a.fancybox      { max-height:400px; overflow:hidden; }
+						a.fancybox img  { max-width:unset; }
+					</style>
+
+					<h1 class="doc-margin-top-0 doc-margin-bottom-0">Chauffeur Booking System</h1>
+					<p class="doc-margin-top-0">Chauffeur Booking System for WordPress | Created: 01.12.2017 | Latest update: 04.10.2023</p>
+
+					<!-- -->
+
+					<div id="about" class="doc-section">
+
+						<h2>About</h2>
+
+						<p>Chauffeur Booking System is a powerful limo reservation WordPress plugin for companies of all sizes. It can be used by both limo and shuttle operators. It provides a simple, step-by-step booking process and an intuitive backend administration. With Chauffeur Booking System you can easily take online reservations for any route defined e.g. airport transfer or city tour, hourly or point-to-point with support for intermediate points (stops). It will help you enhance customer service and manage your limo rental business online.</p>
+
+						<h3>Backend Features</h3>
+
+						<h4>Booking Forms</h4>
+						<p>With this module you can create unlimited number of booking forms and for each of the forms define different settings.</p>
+						<ul>
+							<li>Define service type offered: distance (point-to-point), hourly, flat-rate for predefined routes.</li>
+							<li>You can create a booking form only for one type of service or for all types of services.</li>
+							<li>Choose whether you want to offer the option of extra time. You can set the time range and minimum time unit.</li>
+							<li>Specify the minimum and maximum rental time of the limousine and minimum time unit.</li>
+							<li>Add email accounts that will receive information about new reservations.</li>
+							<li>Specify vehicle categories (vehicle types) that are available in the booking system.</li>
+							<li>Specify routes that are available in the booking system.</li>
+							<li>Specify extras categories that are available in the booking system.</li>
+							<li>Set business hours for each day of the week.</li>
+							<li>Exclude dates from the booking system.</li>
+							<li>Specify available payment methods. Choose between payment in cash, Stripe or PayPal.</li>
+							<li>Define your custom color style of the form.</li>
+						</ul>
+
+						<h4>Bookings</h4>
+						<p>Displays a list of all submitted orders (bookings) in the system.</p>
+						<ul>
+							<li>Browse, edit or delete submitted bookings.</li>
+							<li>Set statuses for bookings: New Booking, Accepted, Rejected, Finished.</li>
+							<li>The administrator receives information about: the selected type of service, pickup date and time, total order quote, distance, time duration, comments from the customer, selected route (if it is a flat rate service type), transfer type, extra time (if choosen), vehicle name with prices per hour and per distance, extras choosen by the customer, customer contact details and chosen form of payment.</li>
+							<li>The administrator receives the complete list (billing) of services and add-ons selected by the customer. Each item on the list is described, including unit price, net value, tax and gross value.</li>
+						</ul>
+
+						<h4>Booking Extras</h4>
+						<p>A module that allows you to add unlimited number of add-ons which can then be selected by the customer like child seat, alcohol package or a box of chocolates.</p>
+						<ul>
+							<li>Browse, add, edit or delete booking extras.</li>
+							<li>Name the add-on and add a description.</li>
+							<li>Define whether an add-on can be ordered more then once (a maximum number for a given add-on).</li>
+							<li>Set the price for single add-on.</li>
+							<li>Select tax rate.</li>
+						</ul>
+
+						<h4>Routes</h4>
+						<p>A module that allows you to define custom routes. Useful for specific routes like for airport transfers or city tours.</p>
+						<ul>
+							<li>Browse, add, edit or delete routes.</li>
+							<li>Define start and end-point of your route.</li>
+							<li>Add unlimited number of intermediate points (stops).</li>
+							<li>Live preview of your route by Google Maps.</li>
+						</ul>
+
+						<h4>Vehicles</h4>
+						<p>With this module you can define unlimited number of vehicles (limos) and set a number of parameters for them.</p>
+						<ul>
+							<li>Browse, add, edit or delete vehicles.</li>
+							<li>Set vehicle name, description and featured image.</li>
+							<li>Set vehicle type (category).</li>
+							<li>Enter vehicle make and model.</li>
+							<li>Enter maximum number of passengers (or seats) and maximum baggage allowance (suitcases).</li>
+							<li>Enter price per distance and per hour.</li>
+							<li>Specify tax rate.</li>
+							<li>Assign vehicle attributes.</li>
+						</ul>
+
+						<h4>Vehicle Types</h4>
+						<p>A list of available vehicle types (or categories).</p>
+
+						<h4>Vehicle Attributes</h4>
+						<p>In this module you can define unlimited number of vehicle attributes like color, engine, etc. and then you can assign them to single vehicles (limos) in their settings.</p>
+						<ul>
+							<li>Browse, add, edit or delete vehicle attributes.</li>
+							<li>Select one of the three attribute types: Text Value, Single Choice, Multi Choice.</li>
+							<li>A text value is used for any custom text. For example, you can define an attribute named 'color' and then specify it by entering it in a vehicle single settings.</li>
+							<li>A single and multi choices are used for predefined values. For example, you can define an attribute named 'transmission' with two values 'automatic' and 'manual' and then specify one of them or both of them in a vehicle single settings.</li>
+						</ul>
+
+						<h4>Tax Rates</h4>
+						<p>Define available tax rates like 0%, 8%, 23%.</p>
+
+						<h3>Frontend Features</h3>
+						<ul>
+							<li>Responsive Layout</li>
+							<li>Retina Ready</li>
+							<li>Ajax Driven</li>
+							<li>Step Based Form with Easy Steps Navigation</li>
+							<li>3 Types of Services: Distance (Point-to-Point), Hourly, Flat Rate with the Possibility of Using all or Only Selected Ones</li>
+							<li>Live Route Preview by Google Maps</li>
+							<li>Support for Unlimited Number of Intermediate Points (Stops) of the Route</li>
+							<li>Total Distance, Total Time Calculation with Extra Time Support</li>
+							<li>Integration with Paypal and Stripe</li>
+							<li>Unlimited Booking Forms with Different Settings</li>
+							<li>Unlimited Bookings</li>
+							<li>Unlimited Vehicles (Limos)</li>
+							<li>Unlimited Add-Ons</li>
+							<li>Unlimited Predefined Routes</li>
+							<li>Detailed Documentation</li>
+							<li>Demo Content Available with One Click Importer</li>
+							<li>Fully Translatable with .po / .mo Files</li>
+							<li>Valid HTML5 Code</li>
+							<li>Crossbrowser Compatible</li>
+						</ul>
+
+					</div>
+
+					<!-- -->
+
+					<div id="installing-plugin" class="doc-section">
+
+						<h2>Installing the plugin</h2>
+						<p>
+							<a href="http://quanticalabs.com/home/wordpress-plugin-installation/" target="_blank">
+								<img src="http://www.quanticalabs.com/Envato/Common/wordpress_plugin_installation.png" alt=""/>
+							</a>
+						</p>          
+						<h3 id="installing-plugin-via-dashboard">Installing the plugin via dashboard</h3>
+						<p>To install the plugin via WordPress dashboard, please follow the steps below:</p>
+						<ol>
+							<li>Download the plugin (select <b>Installable WordPress file only</b> option) from the CodeCanyon to your computer. You will get file in ZIP format.</li>
+							<li>Go to WordPress dashboard and navigate to <b>Plugins / Add new</b>.</li>
+							<li>Click on <b>Upload plugin</b> button.</li>
+							<li>Upload ZIP package from the first point.</li>
+							<li>Click the <b>Activate</b> link that appears below the plugin&#039;s title.</li>
+						</ol>
+
+						<h3 id="installing-plugin-via-ftp">Installing the plugin via FTP</h3>
+						<p>To install the plugin via FTP, please follow the steps below:</p>
+						<ol>
+							<li>Download the plugin (select <b>Installable WordPress file only</b> option) from the CodeCanyon to your computer. You will get file in ZIP format.</li>
+							<li>Unzip it to access the uncompressed files.</li>
+							<li>Connect to your server using your preferred FTP application (e.g FileZilla).</li>
+							<li>Navigate to the <b>wp-content/plugins</b> folder within the WordPress installation on your website.</li>
+							<li>Upload uncompressed plugin to this location via FTP.</li>
+							<li>Go to <b>WordPress dashboard</b> and click on <b>Plugins</b> menu.</li>
+							<li>Click on <b>Activate</b> link.</li>
+							<li>Now your plugin is installed and ready to work.</li>
+						</ol>
+					</div>
+
+					<!-- -->
+
+					<div id="updating-plugin" class="doc-section">
+
+						<h2>Updating the plugin</h2>
+
+						<p>Please note:</p>
+						<ol>
+							<li>If you made any changes in plugin core files all of them will be lost.</li>
+							<li>All data which you entered via WordPress dashboard will be untouched.</li>  
+							<li>Before you start process of updating plugin, please make a backup of core plugin files and database.</li>
+						</ol>
+
+						<p>To update the plugin, please follow the steps below:</p>
+						<ol>
+							<li>Download the plugin (select <b>Installable WordPress file only</b> option) from the CodeCanyon to your computer. You will get file in ZIP format.</li>
+							<li>Go to WordPress dashboard and navigate to <b>Plugins</b>.</li>
+							<li>Find the plugin on the list.</li>
+							<li>Deactivate old version.</li>
+							<li>Remove old version.</li>
+							<li>Click on <b>Upload plugin</b> button.</li>
+							<li>Upload ZIP package from the first point.</li>
+							<li>Click the <b>Activate</b> link that appears below the plugin&#039;s title.</li>                
+							<li>Reset browser cache before using the plugin.</li>
+						</ol>
+
+					</div>
+
+					<!-- -->
+
+					<div id="importing-dummy-content" class="doc-section">
+
+						<h2>Importing dummy content</h2>
+						<p>To start importing demo content, please follow the steps below:</p>
+						<ul>
+							<li>Go to <b>Settings / Chauffeur Booking System</b> <span class="doc-number">1</span>.</li>
+							<li>Click on <b>Import demo</b> <span class="doc-number">2</span> tab.</li>
+							<li>Click on <b>Import</b> <span class="doc-number">3</span> button.</li>
+						</ul>
+						<a href="screen/1.png" class="fancybox">
+							<img src="screen/1.png" alt="Click to open full image"/>
+						</a>
+						<p>Please note that this operation is not reversible. It can takes a few seconds, depending on server speed.</p>
+
+					</div>
+
+					<!-- -->
+
+					<div id="modules">
+
+						<h2>Modules</h2>
+
+						<!-- -->
+
+						<h3 id="bookings">Bookings</h3>
+						<p><b>Bookings</b> module allows to view orders sent by customers.</p>
+						<h4 id="bookings-view">View Booking</h4>
+						<p>All booking details are organized in tabs:</p> 
+						<ul>
+							<li><b>General</b> <span class="doc-number">1</span> - basic booking details like status, pickup date and time, service type, ride distance and duration etc.</li>
+							<li><b>Billing</b> <span class="doc-number">2</span> - billing details,</li>
+							<li><b>Route</b> <span class="doc-number">3</span> - route details like locations, transfer type, extra time etc.</li>
+							<li><b>Vehicle</b> <span class="doc-number">4</span> - vehicle details name, price per hour and distance etc. </li>
+							<li><b>Extra</b> <span class="doc-number">5</span> - addons details,</li>
+							<li><b>Client</b> <span class="doc-number">6</span> - client details like name, e-mail address, phone number, billing details etc.</li>
+							<li><b>Payment</b> <span class="doc-number">7</span> - payment details like name, list of transactions etc.</li>
+						</ul>
+						<a href="screen/2.png" class="fancybox">
+							<img src="screen/2.png" alt="Click to open full image"/>
+						</a>
+
+						<!-- -->
+
+						<h3 id="booking-forms">Booking Forms</h3>
+						<p><b>Booking Forms</b> module allows to create complete booking form.</p>
+						<h4 id="booking-forms-edit">Edit Booking Form</h4>
+						<p>During adding/editing form you can set following details:</p> 
+						<ul>
+							<li>
+								<p>In <b>General</b> <span class="doc-number">1</span> tab:</p>
+								<ul>
+									<li><b>Service type</b> - determines which types of services have to be available,</li>
+									<li><b>Extra time</b> - defines availability and range (in hours) of extra time,</li>
+									<li><b>Duration</b> - defines availability and range (in hours) of duration.</li>
+								</ul>
+							</li>                
+							<li>
+								<p>In <b>Vehicles</b> <span class="doc-number">2</span> tab you can define (by selecting category) which vehicles have to be available in booking form.</p>
+							</li>  
+							<li>
+								<p>In <b>Routes</b> <span class="doc-number">3</span> tab you can define (by selecting category) which routes have to be available in booking form.</p>
+							</li>                  
+							<li>
+								<p>In <b>Extras</b> <span class="doc-number">4</span> tab you can define (by selecting category) which extras have to be available in booking form.</p>
+							</li>  
+							<li>
+								<p>
+									In <b>Availability</b> <span class="doc-number">5</span> tab you can set business hours and define dates not available for booking.
+									Second option is especially helpful during holidays.
+								</p>
+							</li>                     
+							<li>
+								<p>
+									In <b>Payments</b> <span class="doc-number">6</span> tab you can define which payment gateway(s) will be used in booking form.
+									For some of them (Paypal, Stripe) you will have to enter additional details.
+								</p>
+							</li>  
+							<li>
+								<p>In <b>Styles</b> <span class="doc-number">7</span> tab you can overwrite all colors used in booking form.</p>
+							</li>  
+						</ul>
+						<a href="screen/3.png" class="fancybox">
+							<img src="screen/3.png" alt="Click to open full image"/>
+						</a>
+
+						<!-- -->
+
+						<h3 id="booking-extras">Booking Extras</h3>
+						<p><b>Booking Extras</b> module is used to define booking addons like e.g child seat, alcohol package etc.</p>
+						<h4 id="booking-extras-edit">Edit Booking Extra</h4>
+						<p>During adding/editing extra you can set following details:</p> 
+						<ul>
+							<li>
+								<p>In <b>General</b> <span class="doc-number">1</span> tab:</p>
+								<ul>
+									<li><b>Description</b> - description of the addon,</li>
+									<li><b>Quantity</b> - enable/disable possibility of choosing addon quantity by customer,</li>
+									<li><b>Quantity maximum</b> - maximum number of addon to order,</li>
+									<li><b>Price</b> - net price per single addon,</li>
+									<li><b>Tax rate</b> - tax rate defined in <a href="#doc-tax-rates">Tax Rates</a> module.</li>
+								</ul>                    
+							</li>
+						</ul>
+						<a href="screen/4.png" class="fancybox">
+							<img src="screen/4.png" alt="Click to open full image"/>
+						</a>            
+
+						<!-- -->
+
+						<h3 id="routes">Routes</h3>
+						<p><b>Routes</b> module is used to define routes used in <b>Flat rate</b> service type.</p>
+						<h4 id="routes-edit">Edit Route</h4>
+						<p>
+							To create route you have to define start and end location with (optionally) unlimited number of waypoints.
+							Route is drawn during adding each locations.
+						</p>
+						<a href="screen/5.png" class="fancybox">
+							<img src="screen/5.png" alt="Click to open full image"/>
+						</a>  
+
+						<!-- -->  
+
+						<h3 id="vehicles">Vehicles</h3>
+						<p><b>Vehicles</b> module is used to define vehicles available for customers.</p>
+						<h4 id="vehicles-edit">Edit Vehicle</h4>
+						<p>During adding/editing vehicle you can set following details:</p> 
+						<ul>
+							<li>
+								<p>In <b>General</b> <span class="doc-number">1</span> tab:</p>
+								<ul>
+									<li><b>Vehicle make</b> - vehicle make,</li>
+									<li><b>Vehicle model</b> - vehicle model,</li>
+									<li><b>Passenger count</b> - maximum number of spaces for passengers,</li>
+									<li><b>Bags count</b> - maximum number of spaces for bags,</li>
+									<li><b>Price per kilometer</b> - net price per kilometer,</li>
+									<li><b>Price per hour</b> - net price per hour,</li>
+									<li><b>Tax rate</b> - tax rate defined in <a href="#doc-tax-rates">Tax Rates</a> module.</li>
+								</ul>
+							</li>
+							<li>
+								<p>
+									In <b>Attributes</b> <span class="doc-number">2</span> tab you can enter (for text fields) or select (for lists) values for each vehicle attributes.
+									If you do not have to use some of them, simple leave it empty (for text attributes) or set value <b>[Not set]</b> (for attributes selected form list). 
+								</p>
+							</li>
+						</ul>            
+						<a href="screen/6.png" class="fancybox">
+							<img src="screen/6.png" alt="Click to open full image"/>
+						</a>   
+
+						<!-- -->  
+
+						<h3 id="vehicle-types">Vehicle Types</h3>
+						<p><b>Vehicle Types</b> module allows to define category of vehicle. Managing of categories is the same as in case of posts.</p>
+						<a href="screen/7.png" class="fancybox">
+							<img src="screen/7.png" alt="Click to open full image"/>
+						</a>
+
+						<!-- -->  
+
+						<h3 id="vehicle-attributes">Vehicle Attributes</h3>
+						<p><b>Vehicle Attributes</b> module allows to define dictionary of attributes (like engine, power, length etc.) which are selected/entered during adding/editing vehicle.</p>
+						<h4 id="vehicle-attributes-edit">Edit Vehicle Attribute</h4>
+						<p>During adding/editing attribute you can set following details:</p> 
+						<ul>
+							<li>
+								<p>In <b>General</b> <span class="doc-number">1</span> tab:</p>
+								<ul>
+									<li><b>Type</b> - type of attribute: text (value will be entered by user to the text field) or list (value(s) will be selected by user from defined set),</li>
+									<li><b>Values</b> - this option is available for list only. It includes set of possible values to select during adding/editing vehicle.</li>
+								</ul>
+							</li>
+						</ul>
+						<a href="screen/8.png" class="fancybox">
+							<img src="screen/8.png" alt="Click to open full image"/>
+						</a>
+						<p>Please note, that changing attribute type is not allowed after its saving.</p>
+
+						<!-- -->  
+
+						<h3 id="tax-rates">Tax Rates</h3>
+						<p><b>Tax Rates</b> module allows to define tax rates used in system.</p>
+						<h4 id="tax-rates-edit">Edit Tax Rate</h4>
+						<p>During adding/editing single tax rate you can set following details:</p> 
+						<ul>
+							<li>
+								<p>In <b>General</b> <span class="doc-number">1</span> tab:</p> 
+								<ul>
+									<li><b>Value</b> - percentage value of tax rate. In this field allowed are floating numbers (with two digits after point) from range 0-100,</li>
+									<li><b>Deafult tax rate</b> - mark tax rate as default means, that tax will be default selected during adding items e.g: vehicles, extras etc.</li>
+								</ul>
+							</li>
+						</ul>
+						<a href="screen/9.png" class="fancybox">
+							<img src="screen/9.png" alt="Click to open full image"/>
+						</a>
+
+						<!-- -->  
+
+						<h3 id="email-accounts">Email Accounts</h3>
+						<p><b>Email Accounts</b> module allows to define e-mail accounts used in system to sending messages (e.g message to clients with booking details).</p>
+						<h4 id="email-accounts-edit">Edit Email Account</h4>
+						<p>During adding/editing account you can set following details:</p> 
+						<ul>
+							<li>
+								<p>In <b>Sender</b> <span class="doc-number">1</span> tab:</p>
+								<ul>
+									<li><b>Name</b> - name of the sender,</li>
+									<li><b>E-mail address</b> - valid e-mail address of the sender.</li>
+								</ul>
+							</li>
+							<li>
+								<p>In <b>SMTP Authentication</b> <span class="doc-number">2</span> tab:</p>
+								<ul>
+									<li><b>Username</b> - username,</li>
+									<li><b>Password</b> - password,</li>
+									<li><b>Host</b> - host address,</li>
+									<li><b>Port</b> - port number,</li>
+									<li><b>Secure connection type</b> - type of connection: SSL or TLS,</li>
+									<li><b>Debug</b> - enable or disable debugging (all returned messages are displayed in browser console).</li>
+								</ul>
+								<p>Please note that - to use SMTP Authentication - you have to enable it first by set button <b>SMTP auth</b> to <b>Enable</b> state.</p>
+							</li>
+						</ul>
+						 <a href="screen/10.png" class="fancybox">
+							<img src="screen/10.png" alt="Click to open full image"/>
+						</a>
+
+						<!-- -->
+
+					</div>
+
+					<!-- -->
+
+					<div id="plugin-options"> 
+						<h2>Plugin options</h2>
+						<p>
+							All global options of the plugin are available in <b>Settings / Chauffeur Booking System</b>.<br/>
+							In section named <b>General</b> <span class="doc-number">1</span> you can set:
+						</p>
+						<ul>
+							<li>
+								<b>Google Maps API key</b> - can be generated on <a href="https://developers.google.com/maps/documentation/javascript/get-api-key" target="_blank">this page</a>.<br/>
+								This key is required by Google to create and use maps in plugin.
+							</li>
+							<li><b>Currency</b> - currency used in plugin,</li> 
+							<li><b>Length unit</b> - length unit in plugin (currently only kilometers are supported),</li>
+							<li><b>Default sender e-mail account</b> - e-mail account from which will be sending messages to customers about changing of booking status.</li>
+						</ul>
+						<a href="screen/11.png" class="fancybox">
+							<img src="screen/11.png" alt="Click to open full image"/>
+						</a>
+					</div>
+
+					<!-- -->
+
+					<div id="internationalization"> 
+						<h2>Internationalization</h2>
+						<p>The plugins comes with default .pot file located in <b>languages</b> folder.<br/>To translate the theme, please follow the steps below:</p>
+						<ol>
+							<li>Download and install <a href="https://poedit.net/" target="_blank">Poedit</a> application.</li>				
+							<li>Download <b>languages/chauffeur-booking-system.pot</b> file.</li>
+							<li>Open <b>Poedit</b>, click on <b>File / New from POT/PO file</b> text menu on the top, select downloaded <b>.pot</b> file.</li>
+							<li>After opening file, you have to select language of translation.</li>
+							<li>Translate all phrases to selected language.</li>
+							<li>Click on <b>File / Save</b>, you will be promted about entering file name.</li>
+							<li>You have to create file based on schema: <b>chauffeur-booking-syste-CODE.po</b>, where list of code for each language is available here: <a href="https://wpastra.com/docs/complete-list-wordpress-locale-codes/" target="_blank">https://wpastra.com/docs/complete-list-wordpress-locale-codes/</a>.</li>
+							<li>Upload files: .mo (newly created) and .po to server to the <b>languages</b> folder.</li>
+							<li>Please note, that to use new translations, your WordPress site language (<b>Settings / General / Site Language</b>) should be the same as <b>CODE</b> (language) of .po file.</li>
+						</ol>
+					</div>
+
+					<!-- -->
+
+					<div id="files-structure">
+						<h2>Files structure</h2>
+						<table>
+							<thead>
+								<tr>
+									<th>Path</th>
+									<th>Description</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>class</td>
+									<td>PHP classes</td>
+								</tr>
+								<tr>
+									<td>demo</td>
+									<td>Files with demo content</td>
+								</tr>
+								<tr>
+									<td>font</td>
+									<td>Fonts files</td>
+								</tr>
+								<tr>
+									<td>languages</td>
+									<td>Language .po/.mo files</td>
+								</tr>
+								<tr>
+									<td>library</td>
+									<td>PHP libraries</td>
+								</tr>
+								<tr>
+									<td>media</td>
+									<td>Image/audio files</td>
+								</tr>
+								<tr>
+									<td>multisite</td>
+									<td>Dynamic created files</td>
+								</tr>
+								<tr>
+									<td>script</td>
+									<td>Javascript libraries/plugins</td>
+								</tr>
+								<tr>
+									<td>style</td>
+									<td>CSS files</td>
+								</tr>
+								<tr>
+									<td>template</td>
+									<td>HTML/PHP templates</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<!-- -->
+
+					<div>
+						<h2 id="credits">Credits</h2>
+						<h3 id="credits-fonts">Fonts</h3>
+						<p>This plugin uses fonts as below:</p>
+						<ol>
+							<li>
+								<b>Lato</b>,<br/>
+								<a href="https://plus.google.com/106163021290874968147/about" target="_blank">Łukasz Dziedzic</a>, <a href="http://scripts.sil.org/OFL" target="_blank">SIL Open Font License, 1.1</a>, <a href="https://www.google.com/fonts/specimen/Lato" target="_blank">https://www.google.com/fonts/specimen/Lato</a>.
+							</li>
+							<li>
+								<b>Streamline Icon Font (5 Icons)</b><br/>
+								<a href="http://www.webalys.com/">http://www.webalys.com/</a>,
+							</li>
+							<li>Plugin Icon Font By Multiple Designers, MIT License.</li>
+						</ol>
+						<h3 id="credits-images">Images</h3>
+						<p>Free car wallpapers repository, only used for live preview purpose (not included in downloadable package)</p>
+					</div>
+
+					<!-- -->
+
+					<div id="version-history">
+
+						<h2>Version history</h2>
+						<table>
+							<thead>
+								<tr>
+									<th style="width:20%">Release date</th>
+									<th style="width:15%">Version</th>
+									<th style="width:65%">Description</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>04.10.2023</td>
+									<td>6.8</td>
+									<td>
+										Bugs fixed,<br/>
+										Improved code,<br/>
+										Re-build drivers booking acceptance module,<br/> 
+										Added new type of fields: date, time and location,<br/>
+										Added option to add ride as a product to the wooCommerce cart,<br/>
+										Added option to specify number of possible bookings via: date,time,date/time,periods and number of week day,<br/>
+										Added option to send an email notifications (to the customer and admin) only if the booking has been paid successful via PayPal/Stripe built-in payment methods,<br/>
+										Added option to set waypoints duration by the customer,<br/>
+										Added option to view and manage shortcodes,<br/>
+										Added option to assign driver to the vehicle,<br>
+										Added option to set maximum allowed distance/duration/order value for a booking,<br/>
+										Added option to set URL address on which customer will be redirected if payment is not selected,<br>
+										Added option to set price based on return dates, return times and distnace between drop-off and base location,<br>
+										Added option to set vehicles availability based on pickup/return dates and pikcup/return times.<br>
+									</td>
+								</tr>
+								<tr>
+									<td>22.12.2022</td>
+									<td>6.7</td>
+									<td>
+										Improved code.
+									</td>
+								</tr>
+								<tr>
+									<td>22.11.2022</td>
+									<td>6.6</td>
+									<td>
+										Bugs fixed,<br/>
+										Improved code.
+									</td>
+								</tr>
+								<tr>
+									<td>16.11.2022</td>
+									<td>6.5</td>
+									<td>
+										Improved code,<br/>
+										Added option to use Google reCAPTCHA,<br/>
+										Added option to log events from "Fixer.io",<br/>
+										Added option to set non-blocking statuses,<br/>
+										Added option to display agreements depends on service types,<br/>
+										Added option to show/hide panels in step #3 of booking form,<br/>
+										Added option to set notes for a booking extra,<br/>
+										Added option to set a fee for a waypoints,<br/>
+										Added "Currencies" module which allows to manage currencies,<br/>
+										Added option to set difference between return and pickup dates in "Conditions" section of "Pricing Rules" module,<br/>
+										Added option to set multiple prices per distance depends on distance range in a single rule,<br/>
+										Added new types of price source in the "Pricing Rules" module,<br/>
+										Added rule level option in the "Pricing Rules" module,<br/>
+										Improved UX of booking extras,<br/>
+										Improved look and feel of dashboard options.<br/>
+									</td>
+								</tr>
+								<tr>
+									<td>17.02.2022</td>
+									<td>6.4</td>
+									<td>
+										Improved code.
+									</td>
+								</tr>
+								<tr>
+									<td>28.01.2022</td>
+									<td>6.3</td>
+									<td>
+										Improved code.
+									</td>
+								</tr>
+								<tr>
+									<td>12.01.2022</td>
+									<td>6.2</td>
+									<td>
+										Improved code,<br/>
+										Added option to show/hide booking extras,<br/>
+										Added new types of initial fee for a delivery and delivery in case of return,<br/>
+										Added option to send a notification about new booking to the driver via Telegram.
+									</td>
+								</tr>
+								<tr>
+									<td>18.11.2021</td>
+									<td>6.1</td>
+									<td>
+										Improved code,<br/>
+										Added option to restrict driving zone in case of waypoints.
+									</td>
+								</tr>
+								<tr>
+									<td>10.11.2021</td>
+									<td>6.0</td>
+									<td>
+										Improved code,<br/>
+										Improved look and feel of dashboard options,<br/>
+										Added option to display number of passenger in step #1 as a drop down list,<br/>
+										Added option to use "Geofence" module in case of displaying fields in the step #3 of booking form.
+									</td>
+								</tr>
+								<tr>
+									<td>06.10.2021</td>
+									<td>5.9</td>
+									<td>
+										Improved code,<br/>
+										Added all booking details to the event in Google Calendar,<br/> 
+										Added new price calculation methods of booking,<br/>
+										Added option to use fixed price if passenger mode is enabled,<br/>
+										Added new options for timepicker,<br/>
+										Added option to create drop down list in step #3 of booking form,<br/>
+										Added option to set label for transfer type,<br/>
+										Added option to test sending e-mail messages,<br/>
+										Added option to create pricing rules based on post codes,<br/>
+										Added option to send notification about new booking to the customer vay Twilio/Nexmo,<br/>
+										Added option to disabled "Booking summary" step,<br/>
+										Added option to export list of bookings in selected period of time,<br/>
+										Added option to assign coupon to selected vehicles,<br/>
+										Added option to set different layout of fields added to the step #3 of booking form.
+									</td>
+								</tr>
+								<tr>
+									<td>22.12.2020</td>
+									<td>5.8</td>
+									<td>
+										Improved code.
+									</td>
+								</tr>
+								<tr>
+									<td>14.12.2020</td>
+									<td>5.7</td>
+									<td>
+										Improved code,<br/>
+										Improved plugin performance,<br/>
+										Improved sticky sidebar,<br/>
+										Added support for WP 5.6,<br/>
+										Added new booking statuses,<br/>
+										Added option to display ID of the posts,<br/>
+										Added new style (Style 3) for booking form widget,<br>
+										Added option to disable selecting of vehicle in step #2,<br/>
+										Added option to display related wooCommerce and plugin bookings,<br/>  
+										Added option to display transaction details from PayPal and Stripe,<br/>
+										Added option to disable service types tab in step #1 of booking form,<br/>
+										Added option to set "Cancel" and "Success" URL address for PayPal payments,<br/>
+										Added option to synchronize booking statuses between plugin and wooCommerce,<br/>
+										Added option to set booking status after successful payment via PayPal and Stripe.<br/>
+										Added option to disable sending notifications about new booking to customer/admin.
+									</td>
+								</tr>
+								<tr>
+									<td>16.10.2020</td>
+									<td>5.6</td>
+									<td>
+										Improved code.
+									</td>
+								</tr>
+								<tr>
+									<td>15.10.2020</td>
+									<td>5.5</td>
+									<td>
+										Improved code.
+									</td>
+								</tr>
+								<tr>
+									<td>07.10.2020</td>
+									<td>5.4</td>
+									<td>
+										Improved code,<br/>
+										Added new options for the PayPal and Stripe,<br/>
+										Added new payment type: &quot;Credit card on pickup&quot;,<br/>
+										Updated Stripe payment gateway to the newest version.
+									</td>
+								</tr>
+								<tr>
+									<td>31.08.2020</td>
+									<td>5.3</td>
+									<td>
+										Improved code.
+									</td>
+								</tr>
+								<tr>
+									<td>25.08.2020</td>
+									<td>5.2</td>
+									<td>
+										Improved code.
+									</td>
+								</tr>
+								<tr>
+									<td>28.07.2020</td>
+									<td>5.1</td>
+									<td>
+										Improved code,<br/>
+										Added option to approve/reject booking by driver,<br/>
+										Added possibility to set percentage or fixed value of gratuity,<br/>
+										Added option to hide billing details in step #3 of booking form,<br/>
+										Added option to bid price vehicle,<br/>
+										Added support for GTranslate plugin,<br/>
+										Added option to disabled drop-off location in "Hourly" service type,<br/>
+										Added option to set default country,<br/>
+										Added option to hide number of passengers/suitcases on vehicle list in step #2,<br/>
+										Improved phone number field in booking form.
+									</td>
+								</tr>
+								<tr>
+									<td>12.09.2019</td>
+									<td>5.0</td>
+									<td>
+										Improved code,<br/>
+										Fixed problem with &quot;Geofence&quot; module,<br/>
+										Added option to set image for built-in payment methods,<br/>
+										Added options to set background image, color and opacity of booking form preloader,<br/>
+										Added better description of some fields.
+									</td>
+								</tr>
+								<tr>
+									<td>13.08.2019</td>
+									<td>4.9.1</td>
+									<td>
+										Improved code.
+									</td>
+								</tr>
+								<tr>
+									<td>09.08.2019</td>
+									<td>4.9</td>
+									<td>
+										Improved code,<br/>
+										Added option to inherit pricing rules,<br/>
+										Added option to inherit price and taxes between rules,<br/>
+										Improved look and feel of booking form dashboard options,<br/>
+										Improved look and feel of pricing rules dashboard options,<br/>
+										Added &quot;Log Manager&quot; - new tool which allows to view status of all sending e-mail, Nexmo, Twilio, Telegram messages and Google Calendar events,<br/>
+										Added option to disable jQuery UI buttonset widget to avoid conflict with themes,<br/>
+										Added option to display booking add-ons for selected transfer and service types,<br/>
+										Added option to display form fields for selected service types,<br/>
+										Added option to assign coupons to selected users,<br/>
+										Added options to modify routes list for &quot;Flat rate&quot; service type,<br/>
+										Added option to set minimum ride duration for &quot;Distance&quot; and &quot;Hourly&quot; service type,<br/>
+										Added option to display opened vehicle description in step #2 of booking form,<br/>
+										Added option to edit button URL address and label on &quot;Thank you&quot; page,<br/>
+										Added option to set different pickup hours for specific days of week for a routes,<br/>
+										Added option to disable &quot;Thank you&quot; page and redirect customer directly to the checkout.
+									</td>
+								</tr>
+								<tr>
+									<td>01.07.2019</td>
+									<td>4.8.1</td>
+									<td>
+										Improved code.
+									</td>
+								</tr>
+								<tr>
+									<td>28.06.2019</td>
+									<td>4.8</td>
+									<td>
+										Improved code,<br/>
+										Added option to change booking title,<br/>
+										Added option to choose gelocation server,<br/>
+										Added Geofence module for Pricing Rules.
+									</td>
+								</tr>
+								<tr>
+									<td>19.06.2019</td>
+									<td>4.7</td>
+									<td>
+										Improved code.
+									</td>
+								</tr>
+								<tr>
+									<td>06.06.2019</td>
+									<td>4.6</td>
+									<td>
+										Fixed bugs.
+									</td>
+								</tr>
+								<tr>
+									<td>05.06.2019</td>
+									<td>4.5</td>
+									<td>
+										Fixed bugs,<br/>
+										Improved code,<br/>
+										Added option to disable top navigation,<br/>
+										Added option to disable Google Maps in #1 and #3 step,<br/>
+										Added option to sorting vehicles based on prices and user defined values,<br/>
+										Added option to remove payment methods from #3 if wooCommerce is enabled,<br/>
+										Added option to disable/enable wooCommerce sign in/register form,<br/>
+										Added option to disable Google Maps script in used theme,<br/>
+										Added option to limit displayed vehicles.
+									</td>
+								</tr>
+								<tr>
+									<td>17.05.2019</td>
+									<td>4.4</td>
+									<td>
+										Improved code.
+									</td>
+								</tr>
+								<tr>
+									<td>14.05.2019</td>
+									<td>4.3</td>
+									<td>
+										Improved code.
+									</td>
+								</tr>
+								<tr>
+									<td>18.03.2019</td>
+									<td>4.2</td>
+									<td>
+										Improved code.
+									</td>
+								</tr>
+								<tr>
+									<td>06.03.2019</td>
+									<td>4.1</td>
+									<td>
+										Fixed bugs.
+									</td>
+								</tr>
+								<tr>
+									<td>27.02.2019</td>
+									<td>4.0</td>
+									<td>
+										Fixed bugs,<br/>
+										Added option to use multi currencies,<br>
+										Added option to set extra time in minutes,<br/>
+										Added option to define add-ons as mandatory,<br/>
+										Added option to set base location for single vehicle,<br/>
+										Added option to bind add-ons quantity and passengers quantity,<br/>
+										Added option to increase ride time based on provided factor,<br/>
+										Added option to set price in &quot;Pricing rules&quot; module depends on pickup and/or country location,<br/>
+										Added option to force tax rate in &quot;Pricing rules&quot; module,<br/>
+										Added option to enable/disable autocomplete feature on fixed location lists,<br/>
+										Added option to set minimum order value,<br/>
+										Added option to enable/disable types of transfer for each service separately,<br/>
+										Added option to use full address in Google autocomplete fields (instead short form),<br/>
+										Added option to display booking extras grouped in categories,<br/>
+										Added option to create price rule based on transfer type,<br/>
+										Added possibility to import exchange rates from Fixer.io,<br/>
+										Added new module named &quot;Vehicle Companies&quot; based on which administrator can assign vehicles to different companies,<br/>
+									</td>
+								</tr>
+								<tr>
+									<td>03.01.2019</td>
+									<td>3.6</td>
+									<td>
+										Fixed bugs,<br/>
+										Improved look and feel of admin options,<br/>
+										Added support for WordPress 5 Gutenberg editor,<br/>
+										Added option to allow customers to manage locations and waypoints by Google Maps drag and drop interface.
+									</td>
+								</tr>
+								<tr>
+									<td>14.12.2018</td>
+									<td>3.5</td>
+									<td>
+										Fixed bugs,<br/>
+										Improved look and feel of admin options,<br/>
+										Added option to set own label for fixed location list.
+									</td>
+								</tr>
+								<tr>
+									<td>06.12.2018</td>
+									<td>3.4</td>
+									<td>
+									   Improved code.
+									</td>
+								</tr>
+								<tr>
+									<td>30.11.2018</td>
+									<td>3.3</td>
+									<td>
+										Fixed bugs,<br/>
+										Added possibility to set own coupon code,<br/>
+										Added option to create gallery of vehicle images,<br/>
+										Added new type of secure connection for e-mail accounts,<br/>
+										Added option to set billing details state as: unchecked, checked and mandatory,<br/>
+										Added option to display &quot;On request&quot; button (instead of exact price) for vehicle based on pricing rules.
+									</td>
+								</tr>
+								<tr>
+									<td>05.11.2018</td>
+									<td>3.2</td>
+									<td>
+										Fixed bugs,<br/>
+										Added option to exclude vehicles from selected routes,<br/>
+										Added option to split sum of the order to net value and tax,<br/>
+										Added option to exclude drop-off locations for selected pickup locations.
+									</td>
+								</tr>
+								<tr>
+									<td>25.10.2018</td>
+									<td>3.1</td>
+									<td>
+										Fixed bugs.
+									</td>
+								</tr>
+								<tr>
+									<td>19.10.2018</td>
+									<td>3.0</td>
+									<td>
+										Fixed bugs,<br/>
+										Added drivers module,<br/>
+										Added option to send notifications to drivers,<br/>
+										Added option to assign/unassign driver to booking,<br/>
+										Added option to set different calculation method (distance x duration) for distance and flat rate service type,<br/>
+										Added option to define list of fixed locations (pickup and dropoff),<br/>
+										Rebuilt fixed location options,<br/>
+										Rebuilt driving zone options.
+									</td>
+								</tr>
+								<tr>
+									<td>18.09.2018</td>
+									<td>2.9.2</td>
+									<td>
+										Fixed bugs,<br/>
+										Added new price type for a new ride with return,<br/>
+										Added option to disable geolocation on server side,<br/>
+										Added automatic synchronization of booking statuses between wooCommerce and plugin.
+									</td>
+								</tr>
+								<tr>
+									<td>21.08.2018</td>
+									<td>2.9.1</td>
+									<td> 
+										Fixed bugs.<br/>
+									</td>
+								</tr>
+								<tr>
+									<td>17.08.2018</td>
+									<td>2.9</td>
+									<td> 
+										Fixed bugs,<br/>
+										Added support for coupons.
+									</td>
+								</tr>
+								<tr>
+									<td>01.08.2018</td>
+									<td>2.8.1</td>
+									<td> 
+										Fixed bugs,<br/>
+										Added option to set traffic layer on Google Map,<br/>
+										Added option to set booking period in days, hours and minutes.
+									</td>
+								</tr>
+								<tr>
+									<td>27.07.2018</td>
+									<td>2.8</td>
+									<td> 
+										Fixed few minor issues,<br/>
+										Fixed problem with showing timepicker,<br/>
+										Added possibility to make an order based on number of passengers (adult and children),<br/>
+										Added possibility to set a price based on number of passengers (option available in &quot;Pricing rules&quot; module),<br/>
+										Added possibility to set a price based on ride duration (option available for &quot;Hourly&quot; service type in &quot;Pricing rules&quot; module),<br/>
+										Added option to redirect user after making payment via Stripe,<br/>
+										Added option to pay for order directly from e-mail message.<br/>
+									</td>
+								</tr>
+								<tr>
+									<td>12.07.2018</td>
+									<td>2.7</td>
+									<td> 
+										Fixed few minor issues,<br/>
+										Added booking form widget,<br/>
+										Added option to hide all prices and summaries,<br/>
+										Added integration with Telegram Messenger: https://telegram.org/.
+									</td>
+								</tr>
+								<tr>
+									<td>10.05.2018</td>
+									<td>2.6</td>
+									<td> 
+										Fixed few minor issues.
+									</td>
+								</tr>
+								<tr>
+									<td>08.05.2018</td>
+									<td>2.5</td>
+									<td> 
+										Added integration with Google Calendar,<br/>
+										Added option to set default service type offered,<br/>
+										Added option to set default selected vehicle,<br/>
+										Improved view of pricing rules list,<br/>
+										Fixed few minor issues.
+									</td>
+								</tr>
+								<tr>
+									<td>07.05.2018</td>
+									<td>2.4</td>
+									<td> 
+										Fixed problem with saving customer address via wooCommerce plugin.
+									</td>
+								</tr>
+								<tr>
+									<td>04.05.2018</td>
+									<td>2.3</td>
+									<td> 
+										Improved support for WPML,<br/>
+										Added option which allows to display default location on map,<br/>
+										Added option which allows to enable/disable browser geolocation,<br/>
+										Added possibility to log in/register user directly via booking form (wooCommerce),<br/>
+										Added possibility to set fee for a return to base location,<br/>
+										Added possibility to limit pickup and drop-off location to selected area separately,<br/>
+										Added possibility to set fixed pickup and dropoff location for distance and hourly service type,<br/>
+										Fixed few minor issues. 
+									</td>
+								</tr>
+								<tr>
+									<td>12.04.2018</td>
+									<td>2.2</td>
+									<td> 
+										Added support for wooCommerce,<br/>
+										Fixed few minor issues.
+									</td>
+								</tr>
+								<tr>
+									<td>09.04.2018</td>
+									<td>2.1</td>
+									<td> 
+										Added support for RTL mode,<br/>
+										Added integration with Twilio: https://www.twilio.com/ (SMS integration),<br/>
+										Added sorting by price on vehicles list,<br/>
+										Added option to set return date/time,<br/>
+										Added option to set interval between bookings with the same vehicle,<br/>
+										Added option to hide additional fees (initial, delivery) and include them to vehicle price,<br/>
+										Added option to scroll user to booking add-ons section after selecting a vehicle,<br/>
+										Changed order of displaying sidebar and content area in responsive modes,<br/>
+										Changed order of label &quot;More/Lees Info&quot; on vehicles list,<br/>
+										Fixed problem related with validation form fields added to booking details panel,<br/>
+										Fixed few minor issues.
+									</td>
+								</tr>
+								<tr>
+									<td>20.02.2018</td>
+									<td>2.0</td>
+									<td> 
+										Added option to set default status for a new orders,<br/>
+										Added option to constrain choosing location (pickup and drop-off) to selected area,<br/>
+										Added option to set minimum value of the order,<br>
+										Added option to use PayPal sandbox mode,<br/>
+										Improved speed,<br/>
+										Fixed few minor issues.
+									</td>
+								</tr>
+								<tr>
+									<td>16.02.2018</td>
+									<td>1.9</td>
+									<td> 
+										Added option to avoid routes with tolls, highways, ferries,<br/>
+										Added option to define own list of agreements need to confirm by customer in booking form,<br/>
+										Added option to define own tabs and fields in booking forms,<br/>
+										Added option to define different prices and fees for each vehicle and route: fixed price, fixed price for a ride with return, initial fee, delivery fee, price per distance, price per distance for a ride with return, price per hour, price per extra time,<br/>
+										Added option to define different tax rates for each vehicle, route and price type,<br/>
+										Added option to define own pricing rules based on: selected booking form, service type, route, vehicle, day number, day hours, dates range, distance,<br/>
+										Fixed few minor issues.
+									</td>
+								</tr>
+								<tr>
+									<td>19.01.2018</td>
+									<td>1.8</td>
+									<td> 
+										Fixed problem with supporting miles.
+									</td>
+								</tr>
+								<tr>
+									<td>17.01.2018</td>
+									<td>1.7</td>
+									<td> 
+										Improved coding.
+									</td>
+								</tr>
+								<tr>
+									<td>15.01.2018</td>
+									<td>1.6</td>
+									<td>   
+										Improved UI,<br/>
+										Added support for miles,<br/>
+										Added support for different date and time formats,<br/>
+										Added possibility to set availability of vehicles in particular date (and time) range,<br/>
+										Added option to set minimum route length needed to send booking,<br/>
+										Added wire transfer to the list of available payment methods,<br/>
+										Added possibility to limit route locations (pick up, drop-off, waypoint) to selected countries,<br/>
+										Added option to disable second step (vehicle choosing),<br/>
+										Added deposit option,<br/>
+										Added option to prevent double vehicles booking in the same time,<br/>
+										Added possibility to set base location (and add delivery fee to sum of the order),<br/>
+										Fixed few minor issues.
+									</td>
+								</tr>
+								<tr>
+									<td>03.01.2018</td>
+									<td>1.5</td>
+									<td>   
+										Fixed minor issues related with displaying interface on older browsers,<br/>
+										Added possibility to show/hide filter bar of vehicles,<br/>
+										Added possibility to show/hide price per kilometer/hour on vehicle list,<br/>
+										Added possibility to mark payment as mandatory,<br/>
+										Added possibility to set company logo,<br/>
+										Added possibility to customize Google Map,<br>
+										Added possibility to set range of days in which booking is available,<br/>
+										Improved UI.
+									</td>
+								</tr>
+								<tr>
+									<td>23.12.2017</td>
+									<td>1.4</td>
+									<td>   
+										Fixed few minor issues,<br/>
+										Added integration with Nexmo: https://www.nexmo.com/ (SMS integration),<br/>
+										Added possibility to set sticky sidebar with summary,<br/>
+										Improved view of e-mail accounts list in dashboard,<br/>
+										Improved view of tax rates list in dashboard,<br/>
+										Improved view of vehicle attributes list in dashboard,<br/>
+										Improved view of vehicles list in dashboard,<br/>
+										Improved view of booking forms list in dashboard,<br/>
+										Improved view of booking addons list in dashboard,<br/>
+										Improved view of bookings list in dashboard.                
+									</td>
+								</tr>
+								<tr>
+									<td>19.12.2017</td>
+									<td>1.3</td>
+									<td>
+										Fixed few minor bugs,<br/>
+										Improved dashboard options,<br/>
+										Improved loading of vehicle images,<br/>
+										Added button &quot;Back to home&quot; on &quot;Thank you&quot; page,<br/>
+										Added possibility to set time interval in time picker.<br/>
+									</td>
+								</tr>
+								<tr>
+									<td>12.12.2017</td>
+									<td>1.2</td>
+									<td>
+										Added possibility to set price per distance and hour in depending on selected route.
+									</td>
+								</tr>
+								<tr>
+									<td>08.12.2017</td>
+									<td>1.1</td>
+									<td>
+										Fixed few minor bugs,<br/>
+										Added integration with Visual Composer,<br/>
+										Added possibility to set advance booking period,<br/>
+										Improved documentation,<br/>
+										Improved look and feel of dashboard options.                           
+									</td>
+								</tr>
+								<tr>
+									<td>01.12.2017</td>
+									<td>1.0</td>
+									<td>Initial release.</td>
+								</tr>
+							</tbody>
+						</table>
+
+					</div>
+
+					<!-- -->
+
+					<div id="support">
+
+						<h2>Support</h2>
+
+						<p>
+							Support for all our items is conducted through our <a href="http://support.quanticalabs.com/forum" target="_blank">Support Forum</a>. 
+							Please register an account, search the forum or create a new topic, we&#039;ll answer as soon as possible.<br/>
+							We&#039;re in <b>GMT +1</b> and we aim to answer all questions within <b>24 hours</b> (Monday – Friday).
+							In some cases the waiting time can be extended to <b>48 hours</b>.
+							Support requests sent during weekends or public holidays will be processed on next Monday or the next business day.
+						</p>
+
+					</div>
+					
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="doc-footer doc-clear-fix">
+			<div class="doc-main">
+				<div class="doc-footer-copyright">
+					<span>&copy; 2010 - 2023</span>
+					<a href="http://quanticalabs.com" target="_blank">QuanticaLabs</a>
+				</div>
+				<div class="doc-footer-social-icon">
+					<ul>
+						<li><a href="https://themeforest.net/user/quanticalabs?ref=quanticalabs" class="doc-social-icon-envato" target="_blank"></a></li>
+						<li><a href="https://dribbble.com/quanticalabs" class="doc-social-icon-dribbble" target="_blank"></a></li>
+						<li><a href="https://www.behance.net/quanticalabs" class="doc-social-icon-behance" target="_blank"></a></li>
+						<li><a href="https://twitter.com/quanticalabs" class="doc-social-icon-twitter" target="_blank"></a></li>
+						<li><a href="https://www.facebook.com/QuanticaLabs" class="doc-social-icon-facebook" target="_blank"></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<input type="hidden" id="open-tabs" value="1" />
+
+		<script src="script/jquery.min.js"></script>
+		<script src="script/jquery-ui.min.js"></script>
+		<script src="script/jquery.scrollTo.min.js"></script>
+		<script src="script/jquery.flexnav.min.js"></script>
+		<script src="script/jquery.waypoints.min.js"></script>
+		<script src="script/sticky.min.js"></script>
+		<script src="script/jquery.fancybox.js"></script>
+		<script src="script/jquery.fancybox-media.js"></script>
+		<script src="script/jquery.fancybox-buttons.js"></script>
+		<script src="script/jquery.easing.js"></script>
+		<script src="script/jquery.doc.js"></script>
+
+		<script>
+
+			jQuery(document).ready(function($)
+			{
+				$().DOC();
+			});
+
+		</script>
+
+	</body>
+
+</html>
